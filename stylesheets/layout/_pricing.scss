@@ -1,0 +1,22 @@
+.c-pricing {
+  &__content {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &-title {
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 49px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #5B5147;
+      margin: auto;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+  }
+}

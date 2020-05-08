@@ -1,0 +1,206 @@
+
+.c-case-study {
+  background-color: #333333;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -1px;
+    max-width: 806px;
+    margin: auto;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+  }
+  &__description {
+    max-width: 975px;
+    margin: auto;
+    &-item {
+      margin-bottom: 30px !important;
+      .is-three-quarters {
+        background-color: white;
+        .wrapper{
+          padding: 10px;
+        }
+      }
+
+      &-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        * {
+          display: inline;
+        }
+
+        img{
+          max-width: 54px;
+          max-height: 40px;
+        }
+        p {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 23px;
+          margin-left: 7px;
+        }
+      }
+
+      &-content {
+        &-title{
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 29px;
+          margin: 15px 0;
+        }
+
+        &-description {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          margin: 15px 0;
+        }
+      }
+
+      &-footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &-author {
+          display: inline-block;
+          &-img{
+            display: inline-block;
+            img {
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+            }
+          }
+          &-name {
+            margin-left: 10px;
+            display: inline-block;
+            color: #5B5147;
+
+            h6 {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 23px;
+            }
+
+            p {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 23px;
+              opacity: 0.5;
+            }
+          }
+        }
+
+        &-action {
+          display: inline-block;
+          float: right;
+          a {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 23px;
+            text-decoration-line: underline;
+
+            color: #5B5147;
+          }
+        }
+      }
+
+      &-chart {
+        background-color: #5B5147;
+        &-title {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-top: 20px;
+        }
+        padding: 0;
+        position: relative;
+        &-content {
+          position: absolute;
+          bottom: 60px;
+          width: 100%;
+          &-number {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+          }
+          .chart{
+            display:table;
+            table-layout: fixed;
+            width:80%;
+            max-width:700px;
+            height:200px;
+            margin:0 auto;
+
+            background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+            background-size: 100% 50px;
+            background-position: left top;
+
+            li{
+              position:relative;
+              display:table-cell;
+              vertical-align:bottom;
+              height:200px;
+
+              &:last-child {
+                span {
+                  background: #4DAF7C;;
+                }
+              }
+            }
+
+            span{
+              margin:0 1em;
+              display: block;
+              background: #F5F0EC;
+              animation: draw 1s ease-in-out;
+
+              &:before{
+                position:absolute;
+                left:0;right:0;top:100%;
+                padding:5px 1em 0;
+                display:block;
+                text-align:center;
+                content:attr(title);
+                word-wrap: break-word;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 5px;
+              }
+
+            }
+
+          }
+        }
+
+        @keyframes draw{
+          0%{height:0;}
+        }
+      }
+    }
+  }
+}

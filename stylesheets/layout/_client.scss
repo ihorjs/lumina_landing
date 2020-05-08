@@ -1,0 +1,28 @@
+
+.c-client {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #F5F0EC;
+  &__title {
+    padding-top: 40px;
+    text-align: center;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -1px;
+    max-width: 886px;
+    margin: auto;
+    color: #5B5147;
+  }
+  &__images {
+    max-width: 821px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}

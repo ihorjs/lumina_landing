@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.c-footer {
+  background: #333333;
+
+  &__content {
+    margin-left: 60px;
+    padding-top: 70px;
+    position: relative;
+
+    &-right {
+      background-image: url('../images/footer/paw.svg');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+
+      &-item {
+        padding: 10px;
+        &-title {
+          padding-top: 10px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 143.85%;
+          color: #FFFFFF;
+
+          &:last-child {
+            margin-top: 25px;
+          }
+        }
+        &-text {
+          padding-top: 7px;
+          padding-bottom: 7px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 23px;
+          display: block;
+          color: #FFFFFF;
+          &:hover {
+            color: #FFFFFF;
+          }
+          strong {
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+
+    &-made-text {
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: #FFFFFF;
+      opacity: 0.5;
+      position:absolute;
+      bottom: 20px;
+      width: 100%;
+    }
+  }
+}
